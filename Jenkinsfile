@@ -12,7 +12,7 @@ steps{
 git 'https://github.com/shubhmatre/Parameter.git'
 }
 }
-stage (compile) {
+stage ('compile') {
 steps {
 sh 'mvn install'
 }}
