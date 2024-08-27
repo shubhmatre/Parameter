@@ -19,7 +19,7 @@ sh 'mvn install'
 stage (Deployement) {
 steps {
 script {
-sh '''if [ $ENVIRONMENT = "QA" ];then
+sh '''if [ $ENVItRONMENT = "QA" ];then
 	cp target/GRRAS1.war /home/swapnil/Documents/DevOps-Software/apache-tomcat-9.0.79/webapps
 elif  [ $ENVIRONMENT = "UAT" ];then
          cp target/GRRAS1.war /home/swapnil/Documents/DevOps-Software/apache-tomcat-9.0.79/webapps
